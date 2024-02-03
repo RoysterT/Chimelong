@@ -1,0 +1,386 @@
+/* 头部容器 */
+.header-wrap{
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+}
+/* 头部尺寸设置 */
+.header{
+    height: 70px;
+    padding: 0 15px;
+    background-color: white;
+    line-height: 70px;
+}
+/* 头部logo块 */
+.logo{
+    float: left;
+    height: 70px;
+    height: 70px;
+    position: relative;
+    left: 11px;
+    top: 1px;
+}
+/* 头部logo填充图 */
+.header-logo{
+    height: 67px;
+}
+/* logo下的箭头图案块 */
+.logo-arrow{
+    position: absolute;
+    width: 89px;
+    height: 33px;
+    top: 59px;
+    left: -10px;
+    z-index: 0;
+}
+/* logo下的箭头图片 */
+.logo-arrow-img{
+    width: 100%;
+    height: 100%;
+}
+/* 园区选择块 */
+.nav-toggle{
+    float: left;
+    height: 26px;
+    margin-left: 20px;
+    line-height: 24px;
+}
+/* 选择园区 */
+.nav-choose-place{
+    border: #46897d solid 1px;
+    border-radius: 13px;
+    position: absolute;
+    top: 21px;
+}
+/* 两个园区选择按钮 */
+.nav-btn{
+    padding: 0 15px;
+    font-size: 14px;
+    color: #46897d;
+    transition: color .3s;
+}
+/* 广州长隆按钮 */
+.nav-btn-gz:hover{
+    color: #a6ce39;
+    transition: color .3s;
+}
+/* 珠海长隆按钮 */
+.nav-btn-zh:hover{
+    color: #005baa;
+    transition: color .3s;
+}
+/* 搜索 */
+.search{
+    float: right;
+    padding: 0 5px;
+    cursor: pointer;
+}
+/* 搜索块 */
+.search-box-all{
+    position: fixed;
+    /* background-color: red; */
+    width: 1120px;
+    height: 70px;
+    /* top: -80px; */
+    top: 0;
+    left: 50%;
+    transform: translateX(-46%);
+    z-index: 20;
+    display: none;
+}
+/* 搜索块出现 */
+.search:hover .search-box-all{
+    /* top: 0; */
+    /* opacity: 1; */
+    /* display: block; */
+}
+/* 搜索底色块 */
+.search-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color .5s;
+}
+/* .search-box-open{
+    animation: opensearch .5s;
+    -webkit-animation: opensearch .5s;
+}
+.search-box-close{
+    animation: closesearch .5s infinite alternate;
+    -webkit-animation: closesearch .5s infinite alternate;
+}
+@keyframes opensearch
+{
+    0%{background-color: rgba(255, 255, 255, 0)}
+    100%{background-color: rgba(255, 255, 255, 1)}
+}
+@keyframes closesearch
+{
+    100%{background-color: rgba(255, 255, 255, 1)}
+    0%{background-color: rgba(255, 255, 255, 0)}
+} */
+/* 底色块变色 */
+.search:hover .search-box{
+    /* background-color: rgba(255, 255, 255, 1); */
+    transition: background-color .5s;
+}
+/* 搜索图标字体 */
+.search-box .search{
+    width: 18px;
+    height: 20px;
+    position: relative;
+    left: -812px;
+    top: -1px;
+    z-index: 25;
+    font-size: 18px;
+    font-weight: 200;
+}
+/* 关闭搜索图标字体 */
+.search-box .close-search{
+    width: 58px;
+    height: 58px;
+    padding: 15px;
+    position: relative;
+    top: 0px;
+    left: 215px;
+    z-index: 25;
+    font-size: 28px;
+}
+/* 关闭搜索图标字体hover */
+.search-box .close-search:hover{
+    color: #a6ce39;
+    transition: color .3s;
+}
+/* 搜索输入框 */
+.search-input{
+    width: 734.8px;
+    height: 22.85px;
+    position: absolute;
+    right: -275px;
+    top: -6px;
+    bottom: 0;
+    margin: auto 0;
+    padding: 10px 50px 10px 40px;
+    /* background-color: red; */
+    position: relative;
+    z-index: 24;
+    font-size: 16px;
+    outline: none;
+}
+/* 会员块 */
+.member{
+    float: right;
+    line-height: 70px;
+    position: relative;
+    top: 18px;
+}
+.member-content{
+    height: 36px;
+    cursor: pointer;
+}
+/* 会员logo */
+.member-logo{
+    display: inline-block;
+}
+.icon-huiyuanjulebu:before{
+    content: "\e640";
+}
+/* 会员文字 */
+.nav-member{
+    padding: 0 5px;
+    color: black;
+    font-size: 16px;
+    transition: color .3s;
+    position: relative;
+    top: -18px;
+}
+/* hover时的会员块 */
+.member-content:hover .nav-member{
+    color: #a6ce39;
+    transition: color .3s;
+}
+/* 导航栏选项文字效果 */
+.nav-selection-a{
+    color: black;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: color .3s;
+}
+/* 导航栏选项 */
+.nav-selection{
+    float: right;
+    list-style-type: none;
+    position: relative;
+    z-index: 1;
+}
+/* 当前页面提示条 */
+.curent-page-tab, .hover-page-tab{
+    position: absolute;
+    bottom: 0;
+    border: #a6ce39 solid 2px;
+    background-color: #a6ce39;
+    height: 1px;
+    width: 100%;
+    border-radius: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* hover页面提示条默认样式 */
+.hover-page-tab{
+    width: 0;
+    border-width: 0px;
+    height: 5px;
+    transition: width .3s;
+}
+/* hover时显示提示条 */
+.nav-selection:hover .hover-page-tab{
+    width: 96%;
+    height: 5px;
+    border-radius: 2px;
+    left: 50%;
+    transition: width .3s;
+}
+/* hover时导航栏选项文字变色 */
+.nav-selection:hover .nav-selection-a,.nav-selection:hover .florafauna{
+    color: #a6ce39;
+    transition: color .3s;
+}
+/* 动植物研创院下文字 */
+.florafauna{
+    color: black;
+    position:absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 13px;
+    transition: color .3s;
+    height: 50px;
+}
+/* 无下拉菜单的选项鼠标指针样式 */
+.no-drop-down-option{
+    cursor: pointer;
+}
+/* 有下拉菜单的选项鼠标指针样式 */
+.have-drop-down-option{
+    cursor: text;
+}
+/* 下拉菜单栏容器-默认 */
+.drop-down-container{
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #f6faeb;
+    height: 0;
+    z-index: 10;
+}
+/* 乐园与演艺下拉菜单栏容器-显示 */
+.nav-selection1:hover .drop-down-container{
+    height: 274.48px;
+}
+/* 酒店住宿下拉菜单栏容器-显示 */
+.nav-selection2:hover .drop-down-container{
+    height: 304.48px;
+}
+/* 服务支持下拉菜单栏容器-显示 */
+.nav-selection3:hover .drop-down-container{
+    height: 214.48px;
+}
+/* 下拉菜单栏内容块 */
+.drop-down-content-all{
+    height: 100%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    /* background-color: green; */
+}
+/* 下拉菜单栏内容-默认 */
+.drop-down-content{
+    float: left;
+    display: block;
+    height: 0;
+    padding: 0;
+    position: relative;
+    border-left: 1px solid rgba(166,206,57,.3);
+    overflow: hidden;
+}
+/* 下拉菜单栏内容-显示 */
+.nav-selection:hover .drop-down-content{
+    padding: 50px 15px;
+}
+/* 乐园与演艺下拉菜单栏高度 */
+.nav-selection1:hover .drop-down-content{
+    height: 174.48px;
+}
+/* 酒店住宿下拉菜单栏高度 */
+.nav-selection2:hover .drop-down-content{
+    height: 204.48px;
+}
+/* 服务支持下拉菜单栏高度 */
+.nav-selection3:hover .drop-down-content{
+    height: 114.48px;
+}
+/* 每个内容块 */
+.wrapper-ul{
+    width: 100%;
+    position: relative;
+    float: left;
+    color: #333;
+    top: 35px;
+    opacity: 0;
+}
+/* 下拉菜单栏内容-显示 */
+.nav-selection:hover .wrapper-ul{
+    position: relative;
+    top: 0;
+    opacity: 1;
+    transition: all .4s;
+}
+/* 图标字体 */
+.wrapper-ul .iconfont{
+    position: relative;
+    color: #333;
+    left: -10px;
+    cursor: default;
+}
+/* 标题 */
+.wrapper-title{
+    font-weight: bolder;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.4;
+}
+/* 所有内容项 */
+.wrapper-item-all{
+    display: inline-block;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 52.4px;
+    width: max-content;
+    margin: 0 auto;
+}
+/* 内容项 */
+.wrapper-item{
+    list-style: none;
+    font-size: 14px;
+    line-height: 1.4286;
+    margin-bottom: 10px;
+}
+/* 内容项文字 */
+.wrapper-item a{
+    color: #333;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+/* 内容项文字hover */
+.wrapper-item a:hover{
+    color: #a6ce39;
+    transition: all .5s ease;
+}

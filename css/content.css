@@ -1,0 +1,422 @@
+/* 行程推荐模块 */
+.travel-recommend{
+    clear: both;
+    position: relative;
+    height: 563px;
+    margin-bottom: 55px;
+}
+/* 行程推荐标题 */
+.travel-recommend .title{
+    text-align: center;
+    color: #4c4c4c;
+    margin: 0 auto 30px;
+    font-weight: 400;
+    font-size: 30px;
+}
+/* 推荐内容块 */
+.travel-recommend .element{
+    position: relative;
+    left: 10px;
+    float: left;
+    width: 381.333px;
+    height: 489.04px;
+    margin-right: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 2px 2px 3px 0 rgb(0 0 0 / 10%);
+    z-index: 1;
+}
+/* 内容块hover时图片放大 */
+.travel-recommend .element:hover .background-img{
+    transform: scale(1.2);
+    transition: all .5s ease;
+}
+/* 链接 */
+.travel-recommend .element-link{
+    display: block;
+    cursor: pointer;
+    width: 100%;
+}
+/* 背景图 */
+.travel-recommend .background-img{
+    width: 381.33px;
+    z-index: 1;
+    transition: all .5s ease;
+}
+/* layer图 */
+.travel-recommend .layer{
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+}
+/* 文字块 */
+.travel-recommend .text-content{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    text-align: center;
+}
+/* 太阳月亮标识 */
+.travel-recommend .text-content .pic{
+    margin-bottom: 10px;
+}
+.travel-recommend .text-content .pic img{
+    width: 30px;
+    position: relative;
+}
+/* 文字 */
+.travel-recommend .text-content .text{
+    font-weight: 400;
+    font-size: 30px;
+    color: white;
+}
+/* 热门推荐模块 */
+.popular-recommend{
+    clear: both;
+    position: relative;
+    padding: 0 15px;
+    margin-bottom: 25px;
+}
+/* 热门推荐标题 */
+.popular-recommend .title{
+    text-align: center;
+    color: #4c4c4c;
+    margin: 0 auto 30px;
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+/* 热门推荐背景图片 */
+.pop-rec-background-img{
+    position: absolute;
+    top: -384px;
+    right: -367px;
+    z-index: 0;
+}
+/* 热门推荐frame */
+.place-frame{
+    width: 1204px;
+    height: 760px;
+    position: relative;
+    left: -15px;
+    margin: 0 auto;
+}
+/* 新闻资讯块 */
+.news-info{
+    margin-bottom: 150px;
+}
+/* 新闻资讯标题 */
+.news-info .title{
+    text-align: center;
+    color: #4c4c4c;
+    margin: 0 auto 30px;
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+/* 客服热线按钮区 */
+.more-news-btn-area{
+    width: 100%;
+    height: 32px;
+    position: relative;
+    right: 15px;
+    margin-bottom: 30px;
+}
+/* 按钮本体 */
+.more-news-btn{
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 16px;
+    margin: 0 auto;
+    width: 56px;
+    padding: 4px 26px;
+    border: 1px solid #333;
+    height: 22px;
+    border-radius: 16px;
+    transition-property: height, top;
+    transition-duration: 0.4s, 0.4s;
+    transition-timing-function: cubic-bezier(0.31, 3.4, 0.29, -0.15), cubic-bezier(0.31, 3.4, 0.29, -0.15);
+    transform: translateY(-50%);
+    z-index: -1;
+}
+/* 按钮覆盖层 */
+.more-news-btn-layer{
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 110px;
+    height: 32px;
+    border-radius: 9px;
+    opacity: .99;
+    cursor: pointer;
+}
+/* 按钮覆盖层hover */
+.more-news-btn-layer:hover{
+    position: relative;
+    /* top: 2px; */
+    height: 28px;
+}
+/* 按钮覆盖层hover时的按钮 */
+.more-news-btn-layer:hover .more-news-btn{
+    background-color: #a6ce39;
+    border: none;
+    position: relative;
+    height: 18px;
+    transition-property: height, top;
+    transition-duration: 0.4s, 0.4s;
+    transition-timing-function: cubic-bezier(0.31, 3.4, 0.29, -0.15), cubic-bezier(0.31, 3.4, 0.29, -0.15);
+    transform: translateY(-50%);
+}
+/* 按钮内容 */
+.more-news-btn-content{
+    width: max-content;
+    position: absolute;
+    top: 4px;
+    left: 28px;
+}
+/* 按钮文字 */
+.more-news-btn-text{
+    color: #333;
+    font-size: 14px;
+    font-weight: bolder;
+}
+/* 按钮覆盖层hover时的文字 */
+.more-news-btn-layer:hover .more-news-btn-text{
+    color: white;
+}
+/* 按钮区域容器 */
+.know-more-btn-container{
+    width: 160px;
+    height: 40px;
+    position: relative;
+    margin-top: 10px;
+}
+/* 按钮本体 */
+.know-more-btn{
+    position: relative;
+    top: 20px;
+    width: 160px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #a6ce39;
+    box-shadow: 0 7px 12px 0 rgb(166 206 57 / 50%);
+    transition-property: height, top;
+    transition-duration: 0.4s, 0.4s;
+    transition-timing-function: cubic-bezier(0.31, 3.4, 0.29, -0.15), cubic-bezier(0.31, 3.4, 0.29, -0.15);
+    transform: translateY(-50%);
+    z-index: -1;
+}
+/* 按钮覆盖层 */
+.know-more-btn-layer{
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 160px;
+    height: 40px;
+    border-radius: 20px;
+    opacity: .99;
+    cursor: pointer;
+}
+/* 按钮覆盖层hover */
+.know-more-btn-layer:hover{
+    position: relative;
+    height: 40px;
+}
+/* 按钮覆盖层hover时的按钮 */
+.know-more-btn-layer:hover .know-more-btn{
+    position: relative;
+    height: 36px;
+    transition-property: height, top;
+    transition-duration: 0.4s, 0.4s;
+    transition-timing-function: cubic-bezier(0.31, 3.4, 0.29, -0.15), cubic-bezier(0.31, 3.4, 0.29, -0.15);
+    transform: translateY(-50%);
+}
+/* 按钮内容 */
+.know-more-btn-content{
+    width: max-content;
+    position: absolute;
+    top: 8px;
+    left: 46px;
+}
+/* 按钮图标字体 */
+.know-more-btn-iconfont{
+    font-size: 32px;
+    color: white;
+    position: relative;
+    left: 2px;
+    top: 7px;
+}
+/* 按钮文字 */
+.know-more-btn-text{
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+}
+/* 新闻资讯内容块 */
+.all-news-wrapper{
+    background: white;
+    width: 1094px;
+    height: 484px;
+    border-radius: 20px;
+    padding: 50px 35px 40px;
+    position: relative;
+    box-shadow: 2px 2px 3px 0 rgb(0 0 0 / 10%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+/* 新闻资讯内容左侧大块 */
+.news-left-big{
+    float: left;
+    width: 45.243%;
+    height: 100%;
+    margin: 0 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    left: -12px;
+}
+/* 新闻资讯内容背景图 */
+.news-background-img{
+    width: 100%;
+    height: 100%;
+}
+/* 下方内容块 */
+.news-info .text{
+    position: relative;
+    bottom: 60px;
+}
+/* 内容区 */
+.news-info .content{
+    padding: 15px 35px;
+    height: 58px;
+    background-color: rgba(166,206,57,.8);
+    width: 425px;
+}
+/* 新闻资讯内容左侧大块说明 */
+.news-info .illustrate{
+    display: block;
+    border: none;
+    line-height: 1.4;
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+}
+/* 新闻资讯内容左侧大块日期 */
+.news-info .date{
+    position: absolute;
+    display: block;
+    top: 16px;
+    right: 35px;
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+}
+/* 新闻资讯内容右侧大块 */
+.news-right-all{
+    float: left;
+    height: 100%;
+    width: 49.757%;
+    padding: 0 10px;
+    position: relative;
+    left: -12px;
+}
+/* 新闻资讯内容右侧小块 */
+.announcement{
+    display: block;
+    transition: all .5s ease;
+    color: #333;
+    height: 140px;
+    cursor: pointer;
+}
+/* 新闻资讯内容右侧小块hover */
+.announcement:hover{
+    color: #a6ce39;
+}
+/* 图片 */
+.announcement img{
+    height: 140px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+/* 右侧内容块 */
+.media-body{
+    vertical-align: middle;
+    display: table-cell;
+    width: 430px;
+    position: absolute;
+    /* top: -140px;
+    left: 160px; */
+    overflow: visible;
+}
+/* title */
+.media-heading{
+    font-weight: bolder;
+    line-height: 1.4;
+    font-size: 18px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+}
+/* time */
+.timer{
+    font-weight: bolder;
+    font-size: 16px;
+    line-height: 1.4;
+
+}
+/* text */
+.media-text{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+}
+/* 了解更多按钮 */
+.more-news-button{
+    margin-top: 10px;
+    position: relative;
+    font-size: 16px;
+    font-weight: bolder;
+    line-height: 16px;
+    height: 16px;
+    width: 64px;
+    color: white;
+    padding: 12px 48px;
+    border-radius: 20px;
+    background: #a6ce39;
+    box-shadow: 0 7px 12px 0 rgb(166 206 57 / 50%);
+    transition-property: height, top;
+    transition-duration: 0.4s, 0.4s;
+    transition-timing-function: cubic-bezier(0.31, 3.4, 0.29, -0.15), cubic-bezier(0.31, 3.4, 0.29, -0.15);
+    top: 50%;
+    top: 20px;
+    transform: translateY(-50%);
+}
+/* 了解更多按钮hover */
+.more-news-button:hover{
+    height: 12.8px;
+    line-height: 12.8px;
+    transition-property: height, top;
+    transition-duration: 0.4s, 0.4s;
+    transition-timing-function: cubic-bezier(0.31, 3.4, 0.29, -0.15), cubic-bezier(0.31, 3.4, 0.29, -0.15);
+    top: 50%;
+    top: 20px;
+    transform: translateY(-50%);
+}
+/* 分割线 */
+.line{
+    height: 2px;
+    display: block;
+    width: 106%;
+    margin: 15.5px auto;
+    background: #cecece;
+}

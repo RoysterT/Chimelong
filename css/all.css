@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'iconfont';
+    src: url(../fonts/iconfont.woff2) format('woff2'),
+         url(../fonts/iconfont.woff) format('woff'),
+         url(../fonts/iconfont.ttf) format('truetype');
+}
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* 重置浏览器默认边距 */
+*{
+    margin: 0;
+    padding: 0;
+    border-width: 0px;
+}
+/* 清除网页加载时的transition过渡 */
+.none-transition{
+    transition: none!important;
+}
+/* 设置内容区域宽度 */
+.wide{
+    width: 1194px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/* 清除a标签下划线 */
+a{
+    text-decoration: none;
+}
+/* 设置网页字体 */
+body{
+    font-family: PingFang SC,Lantinghei SC,Microsoft YaHei,HanHei SC,Helvetica Neue,Open Sans,Arial,Hiragino Sans GB,微软雅黑,STHeiti,WenQuanYi Micro Hei,SimSun,sans-serif;
+    overflow-x: hidden;
+    background-color: rgb(237, 237, 239);
+}
+/* 中间部分背景 */
+.middle-part{
+    background-color: rgb(237, 237, 239);
+}
+/* 返回顶部按钮 */
+.to-top-box{
+    background-color: #a6ce39;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    position: fixed;
+    left: 50%;
+    bottom: 50px;
+    margin-left: 632px;
+    cursor: pointer;
+    display: none;
+}
+/* 返回顶部按钮内容 */
+.to-top-content{
+    text-align: center;
+    color: white;
+    position: relative;
+    margin-top: 15px;
+}
+/* 返回顶部箭头 */
+.to-top-arrow{
+    display: block;
+    height: 8px;
+    width: 8px;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border: white solid 2.5px;
+    transform: rotate(-45deg);
+    border-left: 0px;
+    border-bottom: 0px;
+    animation: topmove 1s infinite alternate;
+    -webkit-animation: topmove 1s infinite alternate;
+}
+@keyframes topmove
+{
+    0%{top: 0px;}
+    20%{top: 0px;}
+    50%{top: 3px;}
+    80%{top: 0px;}
+    100%{top: 0px;}
+}
+@-webkit-keyframes topmove
+{
+    0%{top: 0px;}
+    20%{top: 0px;}
+    50%{top: 3px;}
+    80%{top: 0px;}
+    100%{top: 0px;}
+}
+/* 返回顶部文字 */
+.to-top-text{
+    font-weight: bolder;
+    font-size: 16px;
+    line-height: 24px;
+}

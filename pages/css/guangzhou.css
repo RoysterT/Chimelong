@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 1180px;
+}
+a{
+    text-decoration: none;
+}
+/* 清除网页加载时的transition过渡 */
+.none-transition{
+    transition: none!important;
+}
+/* 区域切换块 */
+.toggle{
+    position: relative;
+    margin-bottom: 30px;
+}
+/* 区域切换 */
+.choose-place{
+    color: #a6ce39;
+    border: 1px solid #a6ce39;
+    border-radius: 14px;
+    width: 180px;
+    position: relative;
+    height: 26px;
+    margin: 0 auto;
+}
+/* 两个园区选择按钮 */
+.btn{
+    padding: 0 15px;
+    font-size: 14px;
+    color: #a6ce39;
+    text-decoration: none;
+    line-height: 26px;
+    width: 50%;
+}
+/* 广州长隆按钮 */
+.btn-gz{
+    display: inline-block;
+    background-color: #a6ce39;
+    color: white;
+    text-align: center;
+    width: 35%;
+    height: 26px;
+    line-height: 26px;
+    border-radius: 14px;
+}
+/* 珠海长隆按钮 */
+.btn-zh{
+    display: inline-block;
+    position: relative;
+    top: -28px;
+    right: -90px;
+    line-height: 28px;
+}
+.btn-zh:hover{
+    color: #005baa;
+}
+/* 一行内容块 */
+.row{
+    margin-bottom: 25px;
+    position: relative;
+    left: 20px;
+}
+/* 设置每个块的左右padding */
+.content-wide,.content-narrow{
+    padding: 0 5px;
+}
+/* 宽内容块 */
+.content-wide{
+    display: inline-block;
+    width: 48%;
+    position: relative;
+}
+/* 窄内容块 */
+.content-narrow{
+    display: inline-block;
+    width: 23.5%;
+    position: relative;
+}
+/* 每个块的图片框 */
+.content-img{
+    display: block;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 285px;
+}
+/* 图片框里的图片 */
+.content-img .image{
+    width: 100%;
+    transition: all .5s ease;
+}
+/* 文字部分 */
+.content-text{
+    display: block;
+    margin-top: 15px;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    transition: all .5s ease;
+}
+/* hover时的图片 */
+.content:hover .image{
+    transform: scale(1.1);
+    transition: all .5s ease;
+}
+/* hover时的文字 */
+.content:hover .content-text{
+    color: #a6ce39;
+    transition: all .5s ease;
+}
